@@ -24,5 +24,5 @@ li, p, span {
 }
 
 .btn-list-active {
-  @apply text-black font-semibold rounded-full bg-red-600 px-5 py-2.5 border-black border-2  text-sm md:text-lg
+  @apply font-semibold rounded-full bg-red-600 px-5 py-2.5 border-black border-2 text-sm md:text-lg text-white
 }

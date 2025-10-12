@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en" class="scroll-smooth" >
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,8 @@
   <nav class="bg-red-900 fixed w-full z-20 top-0 start-0 border-b border-red-600">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">SJUTEII</span>
+        <img src="dist/img/logo.png" alt="" class="w-12">
+          <span class="self-center text-sm md:text-lg font-semibold whitespace-nowrap text-white">SJUTEII</span>
       </a>
       <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button type="button" class="text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center bg-red-600 hover:bg-red-700 focus:ring-red-800">Get started</button>
@@ -38,16 +39,19 @@
       <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
         <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 lg:dark:bg-transparent">  
           <li>
-            <a href="#" class="block py-2 px-3 rounded-sm hover:text-red-600 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600  md:p-0 md:dark:hover:text-red-600 text-white dark:border-gray-700" aria-current="page">Home</a>
+            <a href="#main" class="block py-2 px-3 rounded-sm hover:text-red-600 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600  md:p-0 md:dark:hover:text-red-600 text-white dark:border-gray-700" aria-current="page">Home</a>
           </li>
           <li>
-            <a href="#" class="block py-2 px-3 rounded-sm hover:text-red-600 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600  md:p-0 md:dark:hover:text-red-600 text-white dark:border-gray-700">About</a>
+            <a href="#tentangkami" class="block py-2 px-3 rounded-sm hover:text-red-600 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600  md:p-0 md:dark:hover:text-red-600 text-white dark:border-gray-700">About</a>
           </li>
           <li>
-            <a href="#" class="block py-2 px-3 rounded-sm hover:text-red-600 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600 md:p-0 md:dark:hover:text-red-600 text-white dark:border-gray-700">Services</a>
+            <a href="#event" class="block py-2 px-3 rounded-sm hover:text-red-600 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600 md:p-0 md:dark:hover:text-red-600 text-white dark:border-gray-700">Event</a>
           </li>
           <li>
-            <a href="#" class="block py-2 px-3 rounded-sm hover:text-red-600 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600 md:p-0 md:dark:hover:text-red-600 text-white dark:border-gray-700">Contact</a>
+            <a href="#divisi" class="block py-2 px-3 rounded-sm hover:text-red-600 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600 md:p-0 md:dark:hover:text-red-600 text-white dark:border-gray-700">Divisi</a>
+          </li>
+          <li>
+            <a href="#contact" class="block py-2 px-3 rounded-sm hover:text-red-600 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600 md:p-0 md:dark:hover:text-red-600 text-white dark:border-gray-700">Contact</a>
           </li>
         </ul>
       </div>
@@ -59,35 +63,41 @@
 
   
 
-  <section id="main" class="bg-center bg-cover bg-no-repeat bg-[url('dist/img/sjute2.jpg')] bg-gray-500 bg-blend-multiply py-28">
-      <div class="px-4 mx-auto max-w-screen-xl text-center py-24 md:py-56">
+  <section id="main" class="flex flex-col w-full h-full mt-20">
+    <div class="relative h-[40rem] md:h-[50rem] flex flex-col items-center justify-center overflow-hidden">
+
+      <img src="dist/img/sjute2.JPG" alt="background sjute" class="absolute inset-0 w-full h-full object-cover object-top z-0 brightness-[0.40]">
+      <div class="absolute inset-0 flex flex-col px-4 mx-auto max-w-screen-xl text-center py-24 md:py-56">
+        <div>
           <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Smawa Journalist Team II</h1>
           <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Wadah pengembangan kreativitas dan profesionalitas siswa SMA Wahidiyah dalam bidang jurnalistik dan multimedia. Bersama, kami berkarya menciptakan inspirasi melalui tulisan, foto, dan karya visual.</p>
+        </div>
           <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-              <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 dark:focus:ring-red-900">
-                  Get started
-                  <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 dark:focus:ring-red-900">
+              Get started
+              <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                  </svg>
-              </a>
-              <a href="#" class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
-                  Learn more
-              </a>  
-          </div>
-      </div>
+                    </svg>
+                  </a>
+                  <a href="#" class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+                    Learn more
+                  </a>  
+                </div>
+              </div>
+            </div>
   </section>
-  <!-- Tentang SJUTE -->
+            <!-- Tentang SJUTE -->
    <section id="tentangkami" class="py-32 bg-white">
-    <div class="text-center mb-16">
-      <p class="text-xl font-semibold text-red-800">Profil Organisasi</p>
-      <h1 class="text-2xl md:text-4xl font-bold">Lebih Dekat dengan Perjalanan Kami</h1>
-    </div>
-
-    <div class="max-w-full flex flex-col items-center text-center container">
+              <div class="text-center mb-16">
+                <p class="text-xl font-semibold text-red-800">Profil Organisasi</p>
+                <h1 class="text-2xl md:text-4xl font-bold">Lebih Dekat dengan Perjalanan Kami</h1>
+              </div>
+              
+              <div class="max-w-full flex flex-col items-center text-center container">
       <h1 class="mb-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-3xl">
         Inspirasi Dalam <span class="text-red-600 dark:text-red-500">Setiap Karya</span>
       </h1>
-      <p class="text-lg font-normal text-gray-500 lg:text-xl">
+      <p class="text-lg font-normal text-gray-500 lg:text-xl md:px-10 lg:px-40">
         Smawa Journalist Team II adalah organisasi yang berfokus pada pengembangan potensi siswa dalam bidang jurnalistik, fotografi, videografi, dan desain kreatif. 
         Kami hadir untuk menumbuhkan semangat berkarya, berpikir kritis, dan berkontribusi positif melalui media yang inspiratif.
       </p>
@@ -105,15 +115,15 @@
       <div class="flex flex-col flex-wrap md:grid md:grid-cols-2 lg:grid-cols-3 items-center px-4 gap-10">
 
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-          <a href="#">
+          <a href="https://www.instagram.com/p/DM-dHsWTdu7/?utm_source=ig_web_copy_link" target="_blank">
             <img class="rounded-t-lg" src="dist/img/cm.jpg" alt="" />
           </a>
           <div class="p-5">
-            <a href="#">
+            <a href="https://www.instagram.com/p/DM-dHsWTdu7/?utm_source=ig_web_copy_link" target="_blank">
               <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Class meeting 2025</h5>
             </a>
             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 h-16 overflow-hidden">Sebuah acara rutinan setahun sekali.</p>
-            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">
+            <a href="https://www.instagram.com/p/DM-dHsWTdu7/?utm_source=ig_web_copy_link" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">
               Read more
               <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -123,15 +133,15 @@
         </div>
         
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-          <a href="#" class="w-1/2">
+          <a href="https://www.instagram.com/p/DM7lWQwzK6T/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="w-1/2">
             <img class="rounded-t-lg w-full" src="dist/img/p5.jpg" alt="" />
           </a>
           <div class="p-5">
-            <a href="#">
+            <a href="https://www.instagram.com/p/DM7lWQwzK6T/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
               <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Gelar Karya P5</h5>
             </a>
             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 h-16 overflow-hidden">hari Sabtu, 14 Juni 2025, SMA Wahidiyah Kepanjen telah melaksanakan kegiatan.</p>
-            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">
+            <a href="https://www.instagram.com/p/DM7lWQwzK6T/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">
               Read more
               <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -141,15 +151,15 @@
         </div>
         
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-          <a href="#">
+          <a href="https://www.instagram.com/p/DLW_yKVT1WT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
             <img class="rounded-t-lg " src="dist/img/purna.jpg" alt="" />
           </a>
           <div class="p-5">
-            <a href="#">
+            <a href="https://www.instagram.com/p/DLW_yKVT1WT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
               <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">PurnaWiyata</h5>
             </a>
             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 h-16 overflow-hidden">Sabtu tgl 17 Mei 2025, Sekolah Wahidiyah Kepanjen melaksanakan PurnaWiyata</p>
-            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">
+            <a href="https://www.instagram.com/p/DLW_yKVT1WT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">
               Read more
               <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -180,7 +190,7 @@
 
 
           <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-              <img class="object-cover w-full rounded-t-lg h-56 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src="dist/img/reporter.jpg" alt="">
+              <img class="object-cover w-full rounded-t-lg h-56 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src="dist/img/smiley-woman-holding-microphone-medium-shot_11zon_11zon.png" alt="">
               <div class="flex flex-col justify-between p-4 leading-normal">
                   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Reporter</h5>
                   <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">tampil saat acara memberikan pertanyaan dan memberikan informasi seputar acara.</p>
@@ -189,7 +199,7 @@
 
           
           <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-              <img class="object-cover w-full rounded-t-lg h-56 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src="dist/img/editor.jpg" alt="">
+              <img class="object-cover w-full rounded-t-lg h-56 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src="dist/img/video-editor-analyzing-film-montage-laptop_11zon.png" alt="">
               <div class="flex flex-col justify-between p-4 leading-normal">
                   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Editor</h5>
                   <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Ini ini yang membuat organisasi kita tampak hidup dengan berkarya pada sistem digital.</p>
@@ -198,7 +208,7 @@
 
 
           <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-              <img class="object-cover w-full rounded-t-lg h-56 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src="dist/img/fotografer.jpg" alt="">
+              <img class="object-cover w-full rounded-t-lg h-50 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src="dist/img/high-angle-photo-camera-plant_11zon.png" alt="">
               <div class="flex flex-col justify-between p-4 leading-normal">
                   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Fotografer</h5>
                   <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Inilah yang selalu mengabadikan momen - momen pada acara kita.</p>
@@ -206,7 +216,7 @@
           </div>
 
           <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-              <img class="object-cover w-full rounded-t-lg h-56 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src="dist/img/kreatif.jpg" alt="">
+              <img class="object-cover w-full rounded-t-lg h-56 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src="dist/img/ideas-idea-vision-design-plan-objective-mission-concept_11zon.png" alt="">
               <div class="flex flex-col justify-between p-4 leading-normal">
                   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Kreatif</h5>
                   <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Ini yang membuat kita konsep ide untuk menjalankan acara ini.</p>
@@ -309,6 +319,37 @@
         </div>
       </div>
      </section>
+     <!-- Kontak -->
+       <section id="contact" class="pt-36 pb-32 dark:bg-slate-800">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <p class="font-semibold text-lg text-primary mb-2 text-white">Contact</p>
+                    <h1 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl text-white">Hubungi Kami</h1>
+                    <p class="font-medium text-base text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, nemo.</p>
+                </div>
+            </div>
+            <form action="">
+                <div class="w-full lg:w-2/3 mx-auto">
+                    <div class="w-full px-4 mb-8">
+                        <label for="name" class="font-bold text-base text-white">Nama</label>
+                        <input type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-white focus:ring-1 focus:border-primary">
+                    </div>
+                    <div class="w-full px-4 mb-8">
+                        <label for="email" class="font-bold text-base text-white">Email</label>
+                        <input type="email" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-white focus:ring-1 focus:border-primary">
+                    </div>
+                    <div class="w-full px-4 mb-8">
+                        <label for="message" class="font-bold text-base text-white">Pesan</label>
+                        <textarea type="text" id="name" class="w-full h-32 bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-white focus:ring-1 focus:border-primary"></textarea>
+                    </div>
+                    <div class="w-full">
+                        <button class="w-full text-base font-semibold text-white bg-red-600 py-3 px-4 rounded-full hover:opacity-80 hover:shadow-lg transition duration-500 ">Hubungi saya</button>
+                    </div>
+                </div>
+        </form>
+        </div>
+     </section> 
    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
    <script src="dist/js/main.js"></script>
 </body>
