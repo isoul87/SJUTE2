@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "flowbite";
+
+.gradient {
+  @apply bg-gradient-to-t from-red-400 to-black bg-clip-text text-transparent
+}
+
+.activeNav{
+  @apply bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:dark:text-blue-500
+}
+
+h1, h2, h3, h4, h5, h6, nav {
+  @apply font-Mons;
+}
+
+li, p, span {
+  @apply font-inter
+}
+
+.btn-list {
+  @apply text-black font-semibold rounded-full hover:bg-red-600 hover:border-white hover:text-white px-5 py-2.5 border-black border-2 text-lg
+}
