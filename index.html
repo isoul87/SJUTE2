@@ -160,6 +160,11 @@
         
         
       </div>
+      <div class="flex items-center justify-center mt-12">
+        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">
+              See More Article
+            </a>
+      </div>
     </div>
     </section>
    <!-- Divisi -->
@@ -175,7 +180,7 @@
 
 
           <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-              <img class="object-cover w-full rounded-t-lg h-56 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src="dist/img/editor.jpg" alt="">
+              <img class="object-cover w-full rounded-t-lg h-56 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src="dist/img/reporter.jpg" alt="">
               <div class="flex flex-col justify-between p-4 leading-normal">
                   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Reporter</h5>
                   <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">tampil saat acara memberikan pertanyaan dan memberikan informasi seputar acara.</p>
@@ -222,17 +227,26 @@
         <div>
           
 
-        <div class="flex flex-col items-center justify-center gap-5 py-4 md:py-8 flex-wrap">
+        <div id="filterDvs" class="grid grid-rows-2 justify-items-center items-center py-4 md:py-8">
           <h5>Tahun: </h5>
-          <div>
-            <button type="button" class="btn-list">All</button>
-            <button type="button" class="btn-list">2024</button>
-            <button type="button" class="btn-list">2025</button>
+          <div class="flex items-center">
+            <ul class="flex gap-5 items-center">
+              <li>
+                <button type="button" class="btn-list">All</button>
+              </li>
+              <li>
+                  <button type="button" class="btn-list">2024</button>
+              </li>
+              <li>
+                  <button type="button" class="btn-list">2025</button>
+              </li>
+            </ul>
+            
           </div>
         </div>
-        <div class="w-full grid grid-cols-3 md:grid-cols-6 lg:grid-cols-7 justify-items-center gap-4">
+        <div id="filterDvsImg" class="w-full grid grid-cols-3 md:grid-cols-6 lg:grid-cols-7 justify-items-center gap-4">
           
-          <div class="relative group flex items-center w-28 h-40 lg:w-40 lg:h-56">
+          <div class="relative group flex items-center w-28 h-40 lg:w-40 lg:h-56" data-filter="2025">
           <img src="dist/img/sjute2.JPG" class="w-full h-full object-cover object-center transition-all duration-500 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
           <div class="bg-red-600 w-full absolute bottom-0 flex flex-col items-center justify-center text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <h5 class="font-bold cursor-pointer text-xl lg:text-2xl text-center">Naufal</h5>
@@ -240,7 +254,7 @@
           </div>
         </div>
            
-          <div class="relative group flex items-center w-28 h-40 lg:w-40 lg:h-56">
+          <div class="relative group flex items-center w-28 h-40 lg:w-40 lg:h-56" data-filter="2024">
           <img src="dist/img/sjute2.JPG" class="w-full h-full object-cover object-center transition-all duration-500 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
           <div class="bg-red-600 w-full absolute bottom-0 flex flex-col items-center justify-center text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <h5 class="font-bold cursor-pointer text-xl lg:text-2xl text-center">Naufal</h5>
@@ -248,7 +262,7 @@
           </div>
         </div>
            
-          <div class="relative group flex items-center w-28 h-40 lg:w-40 lg:h-56">
+          <div class="relative group flex items-center w-28 h-40 lg:w-40 lg:h-56" data-filter="2024">
           <img src="dist/img/sjute2.JPG" class="w-full h-full object-cover object-center transition-all duration-500 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
           <div class="bg-red-600 w-full absolute bottom-0 flex flex-col items-center justify-center text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <h5 class="font-bold cursor-pointer text-xl lg:text-2xl text-center">Naufal</h5>
@@ -256,7 +270,7 @@
           </div>
         </div>
            
-          <div class="relative group flex items-center w-28 h-40 lg:w-40 lg:h-56">
+          <div class="relative group flex items-center w-28 h-40 lg:w-40 lg:h-56" data-filter="2025">
           <img src="dist/img/sjute2.JPG" class="w-full h-full object-cover object-center transition-all duration-500 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
           <div class="bg-red-600 w-full absolute bottom-0 flex flex-col items-center justify-center text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <h5 class="font-bold cursor-pointer text-xl lg:text-2xl text-center">Naufal</h5>
@@ -264,7 +278,7 @@
           </div>
         </div>
            
-          <div class="relative group flex items-center w-28 h-40 lg:w-40 lg:h-56">
+          <div class="relative group flex items-center w-28 h-40 lg:w-40 lg:h-56" data-filter="2025">
           <img src="dist/img/sjute2.JPG" class="w-full h-full object-cover object-center transition-all duration-500 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
           <div class="bg-red-600 w-full absolute bottom-0 flex flex-col items-center justify-center text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <h5 class="font-bold cursor-pointer text-xl lg:text-2xl text-center">Naufal</h5>
@@ -272,7 +286,7 @@
           </div>
         </div>
            
-          <div class="relative group flex items-center w-28 h-40 lg:w-40 lg:h-56">
+          <div class="relative group flex items-center w-28 h-40 lg:w-40 lg:h-56" data-filter="2025">
           <img src="dist/img/sjute2.JPG" class="w-full h-full object-cover object-center transition-all duration-500 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
           <div class="bg-red-600 w-full absolute bottom-0 flex flex-col items-center justify-center text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <h5 class="font-bold cursor-pointer text-xl lg:text-2xl text-center">Naufal</h5>
@@ -280,7 +294,7 @@
           </div>
         </div>
            
-          <div class="relative group flex items-center w-28 h-40 lg:w-40 lg:h-56">
+          <div class="relative group flex items-center w-28 h-40 lg:w-40 lg:h-56" data-filter="2025">
           <img src="dist/img/sjute2.JPG" class="w-full h-full object-cover object-center transition-all duration-500 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
           <div class="bg-red-600 w-full absolute bottom-0 flex flex-col items-center justify-center text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <h5 class="font-bold cursor-pointer text-xl lg:text-2xl text-center">Naufal</h5>
