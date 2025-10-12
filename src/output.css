@@ -2069,6 +2069,10 @@ input:checked + .toggle-bg {
   background-image: url('/dist/img/sjute2.jpg');
 }
 
+.bg-\[url\(\'dist\/img\/sjute2\.jpg\'\)\] {
+  background-image: url('dist/img/sjute2.jpg');
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -2732,6 +2736,11 @@ li, p, span {
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .md\:hover\:bg-transparent:hover {
