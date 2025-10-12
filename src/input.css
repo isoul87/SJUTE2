@@ -20,5 +20,9 @@ li, p, span {
 }
 
 .btn-list {
-  @apply text-black font-semibold rounded-full hover:bg-red-600 hover:border-white hover:text-white px-5 py-2.5 border-black border-2 text-lg
+  @apply text-black font-semibold rounded-full hover:bg-red-600 hover:border-white hover:text-white px-5 py-2.5 border-black border-2  text-sm md:text-lg
+}
+
+.btn-list-active {
+  @apply text-black font-semibold rounded-full bg-red-600 px-5 py-2.5 border-black border-2  text-sm md:text-lg
 }
