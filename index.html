@@ -21,14 +21,16 @@
 
 
 
-  <nav class="bg-red-900 fixed w-full z-20 top-0 start-0 border-b border-red-600">
+  <nav class="bg-red-900 fixed w-full z-20 top-0 start-0 border-b border-red-600 bg-opacity-90 backdrop-blur-3xl">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="dist/img/logo.png" alt="" class="w-12">
           <span class="self-center text-sm md:text-lg font-semibold whitespace-nowrap text-white">SJUTEII</span>
       </a>
       <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <a href="#tentangkami">
           <button type="button" class="text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center bg-red-600 hover:bg-red-700 focus:ring-red-800">Get started</button>
+        </a>
           <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden focus:outline-none focus:ring-2  text-white hover:bg-red-600 focus:ring-red-400" aria-controls="navbar-sticky" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
             <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -37,7 +39,7 @@
         </button>
       </div>
       <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 lg:dark:bg-transparent">  
+        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 lg:dark:bg-transparent">  
           <li>
             <a href="#main" class="block py-2 px-3 rounded-sm hover:text-red-600 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600  md:p-0 md:dark:hover:text-red-600 text-white dark:border-gray-700" aria-current="page">Home</a>
           </li>
@@ -73,18 +75,22 @@
           <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Wadah pengembangan kreativitas dan profesionalitas siswa SMA Wahidiyah dalam bidang jurnalistik dan multimedia. Bersama, kami berkarya menciptakan inspirasi melalui tulisan, foto, dan karya visual.</p>
         </div>
           <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-            <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 dark:focus:ring-red-900">
+            <a href="#tentangkami" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 dark:focus:ring-red-900">
               Get started
               <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                     </svg>
                   </a>
-                  <a href="#" class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
-                    Learn more
+                  <a href="#event" class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+                    Lihat kegiatan
                   </a>  
                 </div>
               </div>
             </div>
+  </section>
+
+  <section>
+    <div id="img"></div>
   </section>
             <!-- Tentang SJUTE -->
    <section id="tentangkami" class="py-32 bg-white">
@@ -171,7 +177,7 @@
         
       </div>
       <div class="flex items-center justify-center mt-12">
-        <a href="#" class="inline-flex items-center px-3 py-2 text-sm md:text-lg font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">
+        <a href="event.html" class="inline-flex items-center px-3 py-2 text-sm md:text-lg font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">
               See More Article
             </a>
       </div>
@@ -234,7 +240,6 @@
           <p class="text-xl font-semibold">Struktur Tim</p>
           <h1 class="font-bold text-3xl md:text-4xl">Personal Smawa Journalist Team II</h1>
         </div>
-        <div>
           
 
         <div id="filterDvs" class="grid grid-rows-2 justify-items-center items-center py-4 md:py-8">
@@ -254,69 +259,18 @@
             
           </div>
         </div>
-        <div id="filterDvsImg" class="w-full grid grid-cols-3 md:grid-cols-6 lg:grid-cols-7 justify-items-center gap-4">
-          
-          <div class="relative group flex items-center w-28 h-40 lg:w-40 lg:h-56" data-filter="2025">
-          <img src="dist/img/sjute2.JPG" class="w-full h-full object-cover object-center transition-all duration-500 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
-          <div class="bg-red-600 w-full absolute bottom-0 flex flex-col items-center justify-center text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <h5 class="font-bold cursor-pointer text-xl lg:text-2xl text-center">Naufal</h5>
-          <p>As Editor</p>           
-          </div>
-        </div>
-           
-          <div class="relative group flex items-center w-28 h-40 lg:w-40 lg:h-56" data-filter="2024">
-          <img src="dist/img/sjute2.JPG" class="w-full h-full object-cover object-center transition-all duration-500 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
-          <div class="bg-red-600 w-full absolute bottom-0 flex flex-col items-center justify-center text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <h5 class="font-bold cursor-pointer text-xl lg:text-2xl text-center">Naufal</h5>
-          <p>As Editor</p>           
-          </div>
-        </div>
-           
-          <div class="relative group flex items-center w-28 h-40 lg:w-40 lg:h-56" data-filter="2024">
-          <img src="dist/img/sjute2.JPG" class="w-full h-full object-cover object-center transition-all duration-500 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
-          <div class="bg-red-600 w-full absolute bottom-0 flex flex-col items-center justify-center text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <h5 class="font-bold cursor-pointer text-xl lg:text-2xl text-center">Naufal</h5>
-          <p>As Editor</p>           
-          </div>
-        </div>
-           
-          <div class="relative group flex items-center w-28 h-40 lg:w-40 lg:h-56" data-filter="2025">
-          <img src="dist/img/sjute2.JPG" class="w-full h-full object-cover object-center transition-all duration-500 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
-          <div class="bg-red-600 w-full absolute bottom-0 flex flex-col items-center justify-center text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <h5 class="font-bold cursor-pointer text-xl lg:text-2xl text-center">Naufal</h5>
-          <p>As Editor</p>           
-          </div>
-        </div>
-           
-          <div class="relative group flex items-center w-28 h-40 lg:w-40 lg:h-56" data-filter="2025">
-          <img src="dist/img/sjute2.JPG" class="w-full h-full object-cover object-center transition-all duration-500 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
-          <div class="bg-red-600 w-full absolute bottom-0 flex flex-col items-center justify-center text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <h5 class="font-bold cursor-pointer text-xl lg:text-2xl text-center">Naufal</h5>
-          <p>As Editor</p>           
-          </div>
-        </div>
-           
-          <div class="relative group flex items-center w-28 h-40 lg:w-40 lg:h-56" data-filter="2025">
-          <img src="dist/img/sjute2.JPG" class="w-full h-full object-cover object-center transition-all duration-500 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
-          <div class="bg-red-600 w-full absolute bottom-0 flex flex-col items-center justify-center text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <h5 class="font-bold cursor-pointer text-xl lg:text-2xl text-center">Naufal</h5>
-          <p>As Editor</p>           
-          </div>
-        </div>
-           
-          <div class="relative group flex items-center w-28 h-40 lg:w-40 lg:h-56" data-filter="2025">
-          <img src="dist/img/sjute2.JPG" class="w-full h-full object-cover object-center transition-all duration-500 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
-          <div class="bg-red-600 w-full absolute bottom-0 flex flex-col items-center justify-center text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <h5 class="font-bold cursor-pointer text-xl lg:text-2xl text-center">Naufal</h5>
-          <p>As Editor</p>           
-          </div>
-        </div>
-           
 
+        <div id="filterDvsImg" class="mt-12 w-full grid grid-cols-3 md:grid-cols-6 lg:grid-cols-7 justify-items-center gap-4">
           
         </div>
+          
 
+        <div class="flex items-center justify-center mt-12">
+          <a href="member.html" class="inline-flex items-center px-3 py-2 text-sm md:text-lg font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">
+                See More Member
+              </a>
         </div>
+
       </div>
      </section>
      <!-- Kontak -->
@@ -324,9 +278,8 @@
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
-                    <p class="font-semibold text-lg text-primary mb-2 text-white">Contact</p>
+                    <p class="font-semibold text-lg text-primary mb-2 text-red-500">Contact</p>
                     <h1 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl text-white">Hubungi Kami</h1>
-                    <p class="font-medium text-base text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, nemo.</p>
                 </div>
             </div>
             <form action="">
