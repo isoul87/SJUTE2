@@ -14,6 +14,7 @@ fetch("dist/json/data.json") // ambil file json
 
 // Generate gambar dari js
 function generateImgMember(fileImg) {
+    console.log(fileImg.length);
     const imgMember  = document.getElementById("filterDvsImg");
     const member = [
         {year: '2024'},
@@ -26,6 +27,7 @@ function generateImgMember(fileImg) {
     if(!fileImg) return; // Hentikan jika elemen tidak ditemukan
 
     fileImg.forEach(img => {
+        
 
         // Buat elemen div untuk parentnya
         const cardDiv = document.createElement("div")
@@ -34,7 +36,7 @@ function generateImgMember(fileImg) {
 
         // Buat img nya untuk parent 
         const imgMem = document.createElement("img")
-        imgMem.className = "w-full h-full object-cover object-center transition-all duration-500 group-hover:brightness-60 saturate-0 group-hover:saturate-100"
+        imgMem.className = "w-full h-full object-cover object-center transition-all rounded-lg duration-500 group-hover:brightness-60 saturate-0 group-hover:saturate-100"
         imgMem.src = img.src;
 
         // Buat detail Unt member
@@ -109,7 +111,7 @@ const imgItem  = document.querySelectorAll("#filterDvsImg .relative");
           start: "top 80%",
           end: "bottom 20%",
           trigger: animBox,
-          toggleActions: "play reverse play reverse"
+          toggleActions: "play none none reverse"
       }
 
     

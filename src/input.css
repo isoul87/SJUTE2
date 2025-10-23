@@ -3,12 +3,8 @@
 @tailwind utilities;
 @import "flowbite";
 
-.gradient {
-  @apply bg-gradient-to-t from-red-400 to-black bg-clip-text text-transparent
-}
-
-.activeNav{
-  @apply bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:dark:text-blue-500
+.anim-box{
+  will-change: transform, opacity;
 }
 
 h1, h2, h3, h4, h5, h6, nav {

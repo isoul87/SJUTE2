@@ -1,8 +1,27 @@
-[
-  { "src": "dist/img/member/abdi.jpg", "alt": "member", "year": "2025", "name": "abdi", "role": "Reporter"},
-  { "src": "dist/img/member/abdi.jpg", "alt": "member", "year": "2024", "name": "anfa", "role": "editor"},
-  { "src": "dist/img/member/abdi.jpg", "alt": "member", "year": "2024", "name": "anfa", "role": "editor"},
-  { "src": "dist/img/member/abdi.jpg", "alt": "member", "year": "2024", "name": "anfa", "role": "editor"},
-  { "src": "dist/img/member/abdi.jpg", "alt": "member", "year": "2025", "name": "abdi", "role": "Kreatif"}
-  
-]
+
+  {
+
+    "imgMem" : [
+      {"src": "dist/img/member/aulia (2).jpg", "alt": "member", "year": "2024", "name": "Aulia", "role": "Editor"},
+      {"src": "dist/img/member/naufal.jpg", "alt": "member", "year": "2024", "name": "Naufal", "role": "Editor"},
+      {"src": "dist/img/member/habibi.jpg", "alt": "member", "year": "2024", "name": "Habibi", "role": "Fotografer"},
+      {"src": "dist/img/member/abdi.jpg", "alt": "member", "year": "2024", "name": "Abdi", "role": "Reporter"},
+      {"src": "dist/img/member/dini.jpg", "alt": "member", "year": "2024", "name": "Dini", "role": "Reporter"},
+      {"src": "dist/img/member/amel.jpg", "alt": "member", "year": "2024", "name": "Amel", "role": "Kreatif"},
+      {"src": "dist/img/member/azril.jpg", "alt": "member", "year": "2024", "name": "Azril", "role": "Reporter"},
+      {"src": "dist/img/member/fauzi.jpg", "alt": "member", "year": "2024", "name": "Fauzi", "role": "Fotografer"},
+      {"src": "dist/img/member/putri.jpg", "alt": "member", "year": "2024", "name": "Putri", "role": "Kreatif"},
+      {"src": "dist/img/member/rahayu.jpg", "alt": "member", "year": "2024", "name": "Rahayu", "role": "Reporter"},
+      {"src": "dist/img/member/sayifra.jpg", "alt": "member", "year": "2024", "name": "Sayfira", "role": "Kreatif"},
+      {"src": "dist/img/member/siti.jpg", "alt": "member", "year": "2024", "name": "Silvia", "role": "Kreatif"},
+        {"src": "dist/img/member/anfa.jpg", "alt": "member", "year": "2025", "name": "Anfa", "role": "Editor"},
+        {"src": "dist/img/member/azkia.jpg", "alt": "member", "year": "2025", "name": "Azkia", "role": "Editor"},
+        {"src": "dist/img/member/bima.jpg", "alt": "member", "year": "2025", "name": "Bima", "role": "Fotografer"},
+        {"src": "dist/img/member/dzikri.jpg", "alt": "member", "year": "2025", "name": "Dzikri", "role": "Fotografer"},
+        {"src": "dist/img/member/ila.jpg", "alt": "member", "year": "2025", "name": "Ila", "role": "Kreatif"},
+        {"src": "dist/img/member/isya.jpg", "alt": "member", "year": "2025", "name": "Isya", "role": "Reporter"},
+        {"src": "dist/img/member/nadin.jpg", "alt": "member", "year": "2025", "name": "Nadin", "role": "Reporter"},
+        {"src": "dist/img/member/puji.jpg", "alt": "member", "year": "2025", "name": "Puji", "role": "Kreatif"},
+        {"src": "dist/img/member/riska.jpg", "alt": "member", "year": "2025", "name": "Riska", "role": "Kreatif"}
+      ]
+      }
