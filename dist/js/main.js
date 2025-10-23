@@ -7,7 +7,7 @@ fetch("dist/json/data.json") // ambil file json
     .then(response => response.json()) // ubah hasilnya menjadi data js
     .then(images => { //kalu berhasil lakukan ini
         dataMem = images
-        generateImgMember(dataMem);
+        generateImgMember(dataMem.imgMem);
         initFilter();
         })
     .catch(error => console.error("gagal memuat data", error))
@@ -85,6 +85,39 @@ const imgItem  = document.querySelectorAll("#filterDvsImg .relative");
     };
 });
 }
+
+ // use a script tag or an external JS file
+ document.addEventListener("DOMContentLoaded", (event) => {
+    gsap.registerPlugin(ScrollTrigger) 
+
+    const animBoxs = document.querySelectorAll(".anim-box")
+  // gsap code here!
+  gsap.from("#route", {
+    y: -200,
+    duration: 2,
+    ease: "bounce.out"
+  });
+
+  animBoxs.forEach(animBox => {
+         gsap.from(animBox, {
+      opacity: 0,
+      y: -200,
+      duration: 1,
+      delay: 0.5,
+      ease: "power1.out",
+      scrollTrigger: {
+          start: "top 80%",
+          end: "bottom 20%",
+          trigger: animBox,
+          toggleActions: "play reverse play reverse"
+      }
+
+    
+  });
+  })
+ 
+ });
+
 
 
 
