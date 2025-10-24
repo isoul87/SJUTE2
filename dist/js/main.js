@@ -36,16 +36,17 @@ function generateImgMember(fileImg) {
 
         // Buat img nya untuk parent 
         const imgMem = document.createElement("img")
-        imgMem.className = "w-full h-full object-cover object-center transition-all rounded-lg duration-500 group-hover:brightness-60 saturate-0 group-hover:saturate-100"
+        imgMem.className = "w-full h-full object-cover object-center transition-all rounded-lg duration-500 group-hover:brightness-60 group-hover:saturate-100"
         imgMem.src = img.src;
+        imgMem.setAttribute("loading", "lazy")
 
         // Buat detail Unt member
         const cardDMem = document.createElement("div")
-        cardDMem.className = "bg-red-600 w-full absolute bottom-0 flex flex-col items-center justify-center text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        cardDMem.className = "bg-red-700 w-full absolute bottom-0 flex flex-col items-center justify-center text-center text-white"
 
         // Buat text detail unt member 
         const title = document.createElement("h5")
-        title.className = "font-bold cursor-pointer text-xl lg:text-2xl text-center"
+        title.className = "font-bold cursor-pointer text-lg lg:text-2xl text-center"
         title.textContent =img.name
 
         const DpMem = document.createElement("p")
@@ -64,7 +65,7 @@ function generateImgMember(fileImg) {
 }
 
 
-
+initFilter()
 function initFilter() {
 const btnFilter = document.querySelectorAll("#filterDvs ul li button");
 const imgItem  = document.querySelectorAll("#filterDvsImg .relative");
@@ -105,7 +106,7 @@ const imgItem  = document.querySelectorAll("#filterDvsImg .relative");
       opacity: 0,
       y: -200,
       duration: 1,
-      delay: 0.5,
+      delay: 1,
       ease: "power1.out",
       scrollTrigger: {
           start: "top 80%",
