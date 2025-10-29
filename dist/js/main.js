@@ -1,6 +1,23 @@
+window.addEventListener('load', function() {
+        const loaderElement = document.getElementById('loader');
+        const mainContentElement = document.getElementById('main-content');
+        setTimeout(() => {
+          if (loaderElement) loaderElement.classList.add('hidden');
+                if (mainContentElement) {
+                    mainContentElement.classList.remove('invisible');           
+                }
+      gsap.from("#main-content", {
+        opacity: 0,
+        y: 50,
+        duration: 1.2,
+        ease: "power3.out",
+    });
+        }, 2000)
+  });
+    
+
+
 // Membuat generate gambar
-
-
 const dataImg = []
 
 fetch("dist/json/data.json") // ambil file json
@@ -46,7 +63,7 @@ function generateImgMember(fileImg) {
 
         // Buat text detail unt member 
         const title = document.createElement("h5")
-        title.className = "font-bold cursor-pointer text-lg lg:text-2xl text-center"
+        title.className = "font-bold text-lg lg:text-2xl text-center"
         title.textContent =img.name
 
         const DpMem = document.createElement("p")
@@ -96,7 +113,7 @@ const imgItem  = document.querySelectorAll("#filterDvsImg .relative");
     const animBoxs = document.querySelectorAll(".anim-box")
   // gsap code here!
   gsap.from("#route", {
-    y: -200,
+    opacity: 0,
     duration: 2,
     ease: "bounce.out"
   });
