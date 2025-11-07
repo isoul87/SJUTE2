@@ -4,7 +4,7 @@ window.addEventListener('load', function() {
         setTimeout(() => {
           if (loaderElement) loaderElement.classList.add('hidden');
                 if (mainContentElement) {
-                    mainContentElement.classList.remove('hidden');           
+                    mainContentElement.classList.remove('opacity-0');           
                 }
       gsap.from("#main-content", {
         opacity: 0,
@@ -20,7 +20,38 @@ window.addEventListener('load', function() {
 // Membuat generate gambar
 const dataImg = []
 
-fetch("dist/json/data.json") // ambil file json
+
+ // use a script tag or an external JS file
+ document.addEventListener("DOMContentLoaded", (event) => {
+    gsap.registerPlugin(ScrollTrigger) 
+
+    const animBoxs = document.querySelectorAll(".anim-box")
+  // gsap code here!
+  gsap.from("#route", {
+    opacity: 0,
+    duration: 2,
+    ease: "bounce.out"
+  });
+
+  animBoxs.forEach(animBox => {
+         gsap.from(animBox, {
+      opacity: 0,
+      y: -200,
+      duration: 1,
+      delay: 1,
+      ease: "power1.out",
+      scrollTrigger: {
+          start: "top 80%",
+          end: "bottom 20%",
+          trigger: animBox,
+          toggleActions: "play none none reverse"
+      }
+
+    
+  });
+  })
+
+  fetch("dist/json/data.json") // ambil file json
     .then(response => response.json()) // ubah hasilnya menjadi data js
     .then(images => { //kalu berhasil lakukan ini
         dataMem = images
@@ -106,35 +137,6 @@ const imgItem  = document.querySelectorAll("#filterDvsImg .relative");
 });
 }
 
- // use a script tag or an external JS file
- document.addEventListener("DOMContentLoaded", (event) => {
-    gsap.registerPlugin(ScrollTrigger) 
-
-    const animBoxs = document.querySelectorAll(".anim-box")
-  // gsap code here!
-  gsap.from("#route", {
-    opacity: 0,
-    duration: 2,
-    ease: "bounce.out"
-  });
-
-  animBoxs.forEach(animBox => {
-         gsap.from(animBox, {
-      opacity: 0,
-      y: -200,
-      duration: 1,
-      delay: 1,
-      ease: "power1.out",
-      scrollTrigger: {
-          start: "top 80%",
-          end: "bottom 20%",
-          trigger: animBox,
-          toggleActions: "play none none reverse"
-      }
-
-    
-  });
-  })
  
  });
 
