@@ -4,7 +4,7 @@ window.addEventListener('load', function() {
         setTimeout(() => {
           if (loaderElement) loaderElement.classList.add('hidden');
                 if (mainContentElement) {
-                    mainContentElement.classList.remove('invisible');           
+                    mainContentElement.classList.remove('hidden');           
                 }
       gsap.from("#main-content", {
         opacity: 0,
